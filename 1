@@ -1,0 +1,49 @@
+Crear Base datos
+Creación de base de datos y tablas
+
+Create database holamundo;
+Show databases   database record  list database created
+
+Crear Tabla
+use Products
+CREATE TABLE Products ();
+      Id int
+Tipo varchar (255)
+Estado (255)
+PRIMARY KEY
+
+INSERT DATA INTO TABLE 
+--INSERT INTO Products (tipo.estado) VALUES (‘maquillaje’ ,’ nuevo’);
+modificar table 
+ALTER TABLE Products MODIFY COLUMN id int auto_increment;     execute consult command enter
+Obtener el comando
+SHOW CREATE TABLE  products  run select copy field 
+CREATE TABLE product
+‘Id’not null auto_increment
+‘Tipo’ varchar (255) DEFAULT NULL,
+‘Estado’ varchar (255) DEFAULT NULL,
+PRIMARY KEY (‘ Id ’)
+);
+
+INSERT INTO Products (tipo.estado) VALUES (‘maquillaje’ ,’ nuevo’); run
+INSERT INTO Products (tipo.estado) VALUES (‘espejos’ ,’ nuevo’);
+INSERT INTO Products (tipo.estado) VALUES (‘almohadas’ ,’nuevosinpaquete’);
+
+Listar registros enlistados
+SELECT * FROM products; run
+SELECT * FROM products WHERE id = ‘1’ 
+SELECT * FROM products WHERE  estado= ‘nuevo’ AND tipo =  ‘maquillaje’;
+
+ACTUALIZAR REGISTRO BASE DATOS 
+UPDATE products SET estado = ‘nuevo’ where id= 3  run
+SELECT FROM products
+
+ELIMINAR REGISTROS 
+DELECT FROM product WHERE estado = ‘nuevo’;   DROPDOWN Copy response
+--error 1175 to indicate id
+Correct: DELECT FROM product WHERE id = ‘3’;   
+
+UPDATE products set estado = nuevo sin paquete WHERE tipo = almohada
+UPDATE products set estado = nuevo sin paquete WHERE id = almohada
+
+--error 1175 to indicate id
